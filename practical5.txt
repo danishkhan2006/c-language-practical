@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+    int matrix[3][3];
+
+    // Input elements for the 3x3 matrix
+    printf("Enter elements of the 3x3 matrix:\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            scanf("%d", &matrix[i][j]);
+        }
+    }
+
+    // Printing the matrix in a formatted way
+    printf("\nThe 3x3 matrix is:\n");
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            printf("%d ", matrix[i][j]);
+        }
+        printf("\n");  // Newline after each row
+    }
+
+    return 0;
+}
